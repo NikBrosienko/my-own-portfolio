@@ -1,0 +1,29 @@
+<script type="text/javascript">
+	var nuber = parseInt ( Math.random ()*100) ;
+    var counttries=0;
+    var playerNumb=1;
+     while (true) {
+     	var usernumber = prompt ("игрок №"+ playerNumb +" Введите число от 0 до 100");
+
+     	if  (usernumber == "q") {
+     		break;
+     	    }  usernumber = parseInt (usernumber);
+    	        if (usernumber > nuber ) {
+          	      alert ("слишклм большое число");
+          	       counttries++;
+                } else if (usernumber < nuber) {
+          	           alert ("слишком маленькое число ");
+          	                 counttries++;
+                } else if (usernumber == nuber) {
+          	           alert ("вы угадали"+ " кол-во попыток "+ counttries + " Выиграл игрок №"+ playerNumb);
+          	            break;
+                }  else  { 
+                 	alert ("Введите число");
+                }
+                if (playerNumb == 1)
+                 {  playerNumb = 2;
+                 } else { playerNumb= 1;
+                 }
+         	}
+               		
+</script>

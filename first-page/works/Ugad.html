@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	var correctcountanswers = 0 ;
+	function chekAnswers (question,useranswer)
+	 {
+	 	var answer = prompt (question);
+	answer = answer.toLowerCase();
+	  if (answer == useranswer) { 
+        alert ("Вы Угадали"); 
+        correctcountanswers++;
+	  } 
+	  else {
+	  	 alert("НЕ правильно "); }	
+	}
+	   
+     chekAnswers ("зимой и летом одним цветом","ель");
+     chekAnswers ("без оконо и дверей полна горница людей","огурец");
+     alert (correctcountanswers);
+
+	
+</script>

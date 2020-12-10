@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script >
+		var sumv = parseFloat( prompt("введите Сумму вклада"));
+		 var percent = parseFloat(prompt ( "Введите процент по депоизту в год "));
+		 var i=0 ;
+		 while (i<=4) {
+		 		 	sumv= parseInt( sumv + (sumv*percent*365/365)*0.01) ;
+		 		 	i++;
+		 		 	alert ("ваш вклад в " +  i + "году"  );
+		 		 	alert (sumv);
+		}
+
+</script>
